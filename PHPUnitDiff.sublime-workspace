@@ -1,0 +1,592 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Fix",
+				"FixProperties"
+			],
+			[
+				"Prope",
+				"Properties"
+			],
+			[
+				"Cats",
+				"CatsAndDogsModelSchema"
+			],
+			[
+				"ob",
+				"observable"
+			],
+			[
+				"TypeS",
+				"TypeSchemaVM"
+			],
+			[
+				"observ",
+				"observableArray"
+			],
+			[
+				"Typ",
+				"TypeSchemas"
+			],
+			[
+				"Property",
+				"PropertyToAdd"
+			],
+			[
+				"TypeSc",
+				"TypeSchemasMapping"
+			],
+			[
+				"Valid",
+				"ValidationExceptions"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"Cascading",
+				"CascadingDataSetExplorerVM"
+			],
+			[
+				"Cas",
+				"CascadingDataSet"
+			],
+			[
+				"Paren",
+				"ParentRecord"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "PHPUnitDiff.css",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "PHPUnitDiff.html",
+			"settings":
+			{
+				"buffer_size": 710,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "PHPUnutDiffVM.js",
+			"settings":
+			{
+				"buffer_size": 30,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorer.html",
+			"settings":
+			{
+				"buffer_size": 5991,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Test/PHPUnitDiff.Test.html",
+			"settings":
+			{
+				"buffer_size": 683,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Test/PHPUnitDiffVM.Test.js",
+			"settings":
+			{
+				"buffer_size": 131,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 201.0,
+		"selected_items":
+		[
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"gu",
+				"Guard: Start Guard"
+			],
+			[
+				"star",
+				"Guard: Start Guard"
+			],
+			[
+				"gua",
+				"Guard: Stop Guard"
+			],
+			[
+				"guar",
+				"Guard: Stop Guard"
+			],
+			[
+				"g",
+				"Guard: Stop Guard"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"exit",
+				"Emmet: Select Next Item"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/cdamour/code/knockout.mapping/knockout.mapping.js",
+		"/home/cdamour/code/knockout.mapping/spec/proxyDependentObservableBehaviors.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/untitled.sublime-project",
+		"/home/cdamour/code/knockout.mapping/spec/runner.html",
+		"/home/cdamour/code/knockout.mapping/spec/issues.js",
+		"/home/cdamour/Desktop/Rest POST Test.html",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorerVM.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorer.css",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/Test/CascadingDataSetExplorer.Test.html",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Guardfile",
+		"/home/cdamour/.config/sublime-text-2/Packages/Guard/Guard.sublime-settings",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Models/CatsAndDogsModel.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Test/CascadingDataSet.Test.html",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/References/knockout.command.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorer.pieces",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSet.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Test/CatsAndDogsModel.Test.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Models/InvalidCatsAndDogsModel.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Test/ValidateModel.Test.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/Test/CascadingDataSetExplorerVM.Test.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/knockout.extensions.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Test/CascadingDataSet.Test.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/References/knockout.mapping.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/References/knockout.validation.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/Models/InvalidCatsAndDogsModel .js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CatsAndDogsModel.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSetExplorerVM.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSetExplorerVM.Test.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSetExplorer.html",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSetExplorer.Test.html",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/knockout.extensions.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSetExplorer.css",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSetExplorer.pieces",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CascadingDataSetExplorerVM.test.js",
+		"/usr/share/applications/sublime.desktop",
+		"/home/cdamour/.config/sublime-text-2/Packages/PHPUnit/PHPUnit.sublime-settings",
+		"/home/cdamour/code/Marketer/Server/Test/integrationTests/APITest.php",
+		"/home/cdamour/.config/sublime-text-2/Packages/User/PHPUnit.sublime-settings",
+		"/home/cdamour/Desktop/untitled.html",
+		"/home/cdamour/Downloads/download"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"===",
+			"= 0",
+			"RefreshResolutions",
+			"SchemaVM",
+			"CatsAndDogsModelSchema",
+			"carProto",
+			"dependentObservables",
+			"setTimeou",
+			"validatable",
+			"validateObservable",
+			"validateSync",
+			"async(",
+			"validatable",
+			"async",
+			"sett",
+			"TypeSchemas",
+			"type",
+			"Properties(), [\"ID\",  \"Name\",  \"Owner\",  \"Legs\"]",
+			"		\n",
+			"type",
+			"Type",
+			"type",
+			"message",
+			"Message",
+			"message",
+			"Message",
+			"message",
+			"[++i]",
+			"result[++i]\n",
+			"[++i]",
+			"i",
+			"[++i",
+			"++i",
+			"Schema",
+			"ok(result[0]",
+			"result[5]",
+			"result[4]",
+			"result[3]",
+			"result[2]",
+			"result[1]",
+			"indexOf",
+			"result[1].",
+			"result[1]",
+			"result[0]",
+			"\");",
+			"\")",
+			"Dogs",
+			"Dog",
+			"Dogs",
+			"dogsType",
+			"DogsType",
+			"Dog",
+			"dogsType",
+			"Dog",
+			"Dogs",
+			"Dog",
+			"dog",
+			"Dog",
+			" \"",
+			"dog",
+			"Dog",
+			"dog",
+			"Dog",
+			"dog",
+			"Name & Address",
+			"cat",
+			"Cat",
+			"cat",
+			"Cat",
+			"cat",
+			"Cat",
+			"cat",
+			"Cat",
+			"cat",
+			"Cat",
+			"cat",
+			"Cat",
+			"cat",
+			"Cat",
+			"cat",
+			"Cat",
+			"Dog",
+			"Wolfie",
+			"Buddy",
+			"dog",
+			"Dog",
+			"dog"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "PHPUnitDiff.css",
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "PHPUnitDiff.html",
+					"settings":
+					{
+						"buffer_size": 710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								691,
+								691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "PHPUnutDiffVM.js",
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorer.html",
+					"settings":
+					{
+						"buffer_size": 5991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2601.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "Test/PHPUnitDiff.Test.html",
+					"settings":
+					{
+						"buffer_size": 683,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								430,
+								430
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Test/PHPUnitDiffVM.Test.js",
+					"settings":
+					{
+						"buffer_size": 131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.523086503173,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.guard":
+	{
+		"height": 112.0
+	},
+	"output.phpunit":
+	{
+		"height": 199.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true
+}

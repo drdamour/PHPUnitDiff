@@ -1,0 +1,108 @@
+#DropZone
+{
+	
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+
+	border: 2px solid #DDD;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background-color: #FEFFEC;
+	text-align: center;
+	color: #BBB;
+	font-size: 2em;
+	font-family: Arial, sans-serif;
+
+}
+
+
+#TestNames
+{
+	float: left;
+
+	margin-top: 52px; /* used to space names */
+
+}
+
+.TestResults
+{
+	float: left;
+
+	border: 2px solid #DDD;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+
+	background-color: gray;
+
+	padding: 3px;
+
+	margin: 5px;
+}
+
+.ResultNames
+{
+	height: 20px;
+	line-height: 20px;
+	border: 2px solid #DDD;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+
+	background-color: yellow;
+
+	margin: 3px 3px 15px 0px;
+	padding: 2px;
+
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.Delta
+{
+	float: right;
+
+	
+
+	border: green solid #DDD;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 6px;
+
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.DeltaGreen
+{
+	background-color: green;
+}
+
+.DeltaRed
+{
+	background-color: red;
+}
+
+.TimeData
+{
+	padding-left: 5px;
+	padding-right: 10px;
+	width: 120px;
+
+}
+
+
+.Cell
+{
+	height: 20px;
+	line-height: 20px;
+	border: 2px solid #DDD;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+
+	background-color: #FEFFEC;
+
+	margin: 5px 0px 5px 0px;
+	
+
+
+}

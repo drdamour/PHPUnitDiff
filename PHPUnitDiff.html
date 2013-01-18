@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PHPUnitDiff</title>
+	
+	<!-- CDSEVM Requirements-->
+	<script src="References/knockout-2.2.0.js"></script>
+	<script src="References/knockout.mapping.js"></script>
+	<script src="References/knockout.validation.js"></script>
+	<script src="References/knockout.command.js"></script>
+	
+
+	<!--App Code-->
+	<script src="PHPUnitDiffVM.js"></script>
+
+	
+	<link rel="stylesheet" type="text/css" href="PHPUnitDiff.css">
+
+</head>
+
+
+<body>
+	<div id="DropZone" data-bind="event: { dragenter: NoOp, dragexit: NoOp, dragover: NoOp, drop : DropLogFile }">
+		Drop Log Files Here
+	</div>
+	<div>
+		
+		<div id="TestNames" data-bind="foreach: TestNames">
+			<div class="Cell" data-bind="text: $data"></div>
+		</div>
+		<!-- ko foreach: TestResults -->
+			<div class="TestResults">
+				<div class="ResultNames" data-bind="text: ID"></div>
+				<!-- ko foreach: $root.TestNames -->
+					<div class="Cell" >
+						<div class="Delta" data-bind="text: Math.abs(($root.TestResults()[0][$data] - $parent[$data]) / $root.TestResults()[0][$data] * 100).toFixed(2) 
+						+ '%', css: { DeltaGreen :  ($root.TestResults()[0][$data] - $parent[$data]) < 0, DeltaRed :  ($root.TestResults()[0][$data] - $parent[$data]) > 0}"></div>
+						<div class="TimeData" data-bind="text: $parent[$data].toFixed(4)"></div>
+					</div>
+				<!-- /ko -->
+			</div>		
+		<!-- /ko -->
+		</div>
+	</div>
+
+	
+
+
+</body>
+
+<script>
+var vm = new PHPUnitDiffVM();
+ko.applyBindings(vm);
+</script>
+
+</html>
