@@ -12,6 +12,9 @@ function PHPUnitDiffVM()
 {
 	var self = this;
 
+
+	var myTestNames = ko.observableArray();
+
 	this.DropLogFile = function(vm, evt)
 	{
 		var files = evt.dataTransfer.files;
@@ -49,10 +52,10 @@ function PHPUnitDiffVM()
 			{
 				//add it to the collection of test names if it isn't already there
 				var TestName = TestEvent.test;
-				//TODO: we should protect the TestNames by encapsulting it as private and exposing it as coputed read only
-				if(self.TestNames.indexOf(TestName) == -1)
+				
+				if(myTestNames.indexOf(TestName) == -1)
 				{
-					self.TestNames.push( TestName );
+					myTestNames.push( TestName );
 				}
 
 				ResultVM[TestName] = TestEvent.time;
@@ -69,9 +72,28 @@ function PHPUnitDiffVM()
 		
 	}
 
-	this.TestNames = ko.observableArray();
+
+	this.TestFilter = ko.observable("");
+
+	this.TestNames = ko.computed(function(){
+		var filter = self.TestFilter().toUpperCase();
+		if(filter == "")
+		{
+			return myTestNames();
+		}
+
+		return myTestNames().filter(
+			function(element)
+			{
+				return (element.toUpperCase().indexOf(filter) > -1);
+			}
+		);
+	})
 
 	this.TestResults = ko.observableArray();
+
+
+	
 
 }
 

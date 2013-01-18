@@ -27,11 +27,17 @@
 	<div id="DropZone" data-bind="event: { dragenter: NoOp, dragexit: NoOp, dragover: NoOp, drop : DropLogFile }">
 		Drop Log Files Here
 	</div>
-	<div>
+	<div data-bind="visible: TestResults().length > 0">
 		
-		<div id="TestNames" data-bind="foreach: TestNames">
-			<div class="Cell" data-bind="text: $data"></div>
+		<div id="TestNames" >
+			<span>Filter:</span>
+			<input type="text" data-bind="value: TestFilter, valueUpdate: 'afterkeydown'"></input>
+			<button data-bind="click: function(){ TestFilter(''); }">clear</button>
+			<!-- ko foreach: $root.TestNames -->
+				<div class="Cell" data-bind="text: $data"></div>
+			<!-- /ko -->
 		</div>
+
 		<div data-bind="sortable: TestResults" >
 			<div class="TestResults">
 				<div class="ResultNames" data-bind="text: ID"></div>
