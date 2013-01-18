@@ -27,6 +27,7 @@
 	<div id="DropZone" data-bind="event: { dragenter: NoOp, dragexit: NoOp, dragover: NoOp, drop : DropLogFile }">
 		Drop Log Files Here
 	</div>
+
 	<div data-bind="visible: TestResults().length > 0">
 		
 		<div id="TestNames" >
@@ -43,9 +44,19 @@
 				<div class="ResultNames" data-bind="text: ID"></div>
 				<!-- ko foreach: $root.TestNames -->
 					<div class="Cell" >
-						<div class="Delta" data-bind="text: Math.abs(($root.TestResults()[0][$data] - $parent[$data]) / $root.TestResults()[0][$data] * 100).toFixed(2) 
-						+ '%', css: { DeltaGreen :  ($root.TestResults()[0][$data] - $parent[$data]) > 0, DeltaRed :  ($root.TestResults()[0][$data] - $parent[$data]) < 0}"></div>
-						<div class="TimeData" data-bind="text: $parent[$data].toFixed(4)"></div>
+						<div class="Delta" data-bind="css: { failed: $parent[$data].status != 'pass' || $root.BaseResult()[$data].status != 'pass', faster :  ($root.BaseResult()[$data].time - $parent[$data].time) > 0, slower :  ($root.BaseResult()[$data].time - $parent[$data].time) < 0}">
+							<!-- ko if: $parent[$data].status == 'pass' && $root.BaseResult()[$data].status == 'pass' -->
+								<span data-bind="text: Math.abs(($root.BaseResult()[$data].time - $parent[$data].time) / $root.BaseResult()[$data].time * 100).toFixed(2) 
+							+ '%'"></span>
+							<!-- /ko -->
+							<!-- ko if: $parent[$data].status != 'pass' -->
+								<span>failed</span>
+							<!-- /ko -->
+							<!-- ko if: $parent[$data].status == 'pass' && $root.BaseResult()[$data].status != 'pass' -->
+								<span>base fail</span>
+							<!-- /ko -->		
+						</div>
+						<div class="TimeData" data-bind="text: $parent[$data].time.toFixed(4)"></div>
 					</div>
 				<!-- /ko -->
 			</div>		

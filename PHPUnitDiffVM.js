@@ -58,7 +58,11 @@ function PHPUnitDiffVM()
 					myTestNames.push( TestName );
 				}
 
-				ResultVM[TestName] = TestEvent.time;
+				ResultVM[TestName] = TestEvent;	
+				
+				
+				
+				
 			}
 
 		}
@@ -92,7 +96,9 @@ function PHPUnitDiffVM()
 
 	this.TestResults = ko.observableArray();
 
-
+	this.BaseResult = ko.computed(function(){
+		return self.TestResults()[0];
+	})
 	
 
 }
