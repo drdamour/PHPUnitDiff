@@ -42,19 +42,20 @@
 		<div data-bind="sortable: TestResults" >
 			<div class="TestResults">
 				<div class="ResultNames" data-bind="text: ID"></div>
+				<div class="DeltaControls">
+					<div>
+						<span>delta base:</span>
+						<select data-bind="options: $root.TestResults, optionsText: 'ID', value: DeltaBase"></select>
+					</div>
+					<div>
+						<button data-bind="click: $root.SetDeltaBase">set as delta base</button>
+					</div>
+				</div>
 				<!-- ko foreach: $root.TestNames -->
 					<div class="Cell" >
-						<div class="Delta" data-bind="css: { failed: $parent[$data].status != 'pass' || $root.BaseResult()[$data].status != 'pass', faster :  ($root.BaseResult()[$data].time - $parent[$data].time) > 0, slower :  ($root.BaseResult()[$data].time - $parent[$data].time) < 0}">
-							<!-- ko if: $parent[$data].status == 'pass' && $root.BaseResult()[$data].status == 'pass' -->
-								<span data-bind="text: Math.abs(($root.BaseResult()[$data].time - $parent[$data].time) / $root.BaseResult()[$data].time * 100).toFixed(2) 
-							+ '%'"></span>
-							<!-- /ko -->
-							<!-- ko if: $parent[$data].status != 'pass' -->
-								<span>failed</span>
-							<!-- /ko -->
-							<!-- ko if: $parent[$data].status == 'pass' && $root.BaseResult()[$data].status != 'pass' -->
-								<span>base fail</span>
-							<!-- /ko -->		
+						<div class="Delta" data-bind="css: { failed: $parent[$data].Delta() == 'failed' || $parent[$data].Delta() == 'base fail', faster :  $parent[$data].TimeDelta() > 0, slower :  $parent[$data].TimeDelta() < 0}">
+							
+							<span data-bind="text: $parent[$data].Delta"></span>
 						</div>
 						<div class="TimeData" data-bind="text: $parent[$data].time.toFixed(4)"></div>
 					</div>

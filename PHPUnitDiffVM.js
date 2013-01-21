@@ -1,11 +1,67 @@
-function TestResultVM( ID, TestResult )
+function TestResultVM( ID, DeltaBase )
 {
 	var self = this;
 
 	this.ID = ko.observable( ID );
 
+	if(DeltaBase == null) DeltaBase = self;
+	this.DeltaBase = ko.observable( DeltaBase );
 
+	this.AddTestEvent = function( Event )
+	{
+		//TODO: make this it's own vm so the anonymous lambda is recreted for every event
+		self[Event.test] = Event;
+		self[Event.test].Delta = ko.computed(
+			function(TestName)
+			{	
+				return function()
+				{
+
+					var baseEvent = self.DeltaBase()[TestName];
+					var thisEvent = self[TestName];
+					
+					//if it failed show that
+					if(thisEvent.status != 'pass')
+					{
+						return "failed";
+					}
+					else if(baseEvent == thisEvent)
+					{
+						return "";
+					}
+					else if(baseEvent.status != 'pass')
+					{
+						return "base fail";
+					}
+					else
+					{
+						return Math.abs((baseEvent.time - thisEvent.time) / baseEvent.time * 100).toFixed(2) + '%'
+					}
+							
+				}
+			}(Event.test)
+		);
+
+
+		self[Event.test].TimeDelta = ko.computed(
+			function(TestName)
+			{	
+				return function()
+				{
+
+					var baseEvent = self.DeltaBase()[TestName];
+					var thisEvent = self[TestName];
+					
+					return baseEvent.time - thisEvent.time;
+							
+				}
+			}(Event.test)
+		);
+
+
+	}
 }
+
 
 
 function PHPUnitDiffVM()
@@ -24,7 +80,7 @@ function PHPUnitDiffVM()
 			reader.onload = (function(theFile) {
         		return function(e)
         		{
-	          		self.AddTestResult( PHPUnitDiffVM.ParseTestEventsJSON( e.srcElement.result), theFile.name  );
+	          		self.AddTestResultSet( PHPUnitDiffVM.ParseTestEventsJSON( e.srcElement.result), theFile.name  );
         		};
       		})(files[i]);
 
@@ -36,13 +92,13 @@ function PHPUnitDiffVM()
 	};
 
 
-	this.AddTestResult = function( TestResult, Identifier )
+	this.AddTestResultSet = function( TestResultSet, Identifier )
 	{
-		var ResultVM = new TestResultVM(Identifier, TestResult);
+		var ResultVM = new TestResultVM(Identifier, self.TestResults().length > 0 ? self.TestResults()[0] : null);
 
-		for(var i = 0, l = TestResult.length; i < l; i++)
+		for(var i = 0, l = TestResultSet.length; i < l; i++)
 		{
-			var TestEvent = TestResult[i];
+			var TestEvent = TestResultSet[i];
 
 			if(TestEvent.event == "suiteStart")
 			{
@@ -58,10 +114,7 @@ function PHPUnitDiffVM()
 					myTestNames.push( TestName );
 				}
 
-				ResultVM[TestName] = TestEvent;	
-				
-				
-				
+				ResultVM.AddTestEvent( TestEvent ) ;
 				
 			}
 
@@ -96,10 +149,20 @@ function PHPUnitDiffVM()
 
 	this.TestResults = ko.observableArray();
 
-	this.BaseResult = ko.computed(function(){
-		return self.TestResults()[0];
-	})
 	
+	this.FirstResult = ko.computed(function(){
+		return self.TestResults()[0];
+	});
+	
+	
+	this.SetDeltaBase = function()
+	{
+		var results = self.TestResults();
+		for(var i = 0, l = results.length; i < l; i++)
+		{
+			results[i].DeltaBase( this );
+		}
+	}
 
 }
 

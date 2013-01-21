@@ -111,3 +111,16 @@
 
 
 }
+
+.DeltaControls
+{
+	font-size: 10pt;
+	color: white;
+	text-align: center;
+
+}
+
+.DeltaControls button
+{
+	font-size: 10pt;
+}
