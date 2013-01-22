@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"ob",
+				"observableArray"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
 				"Fix",
 				"FixProperties"
 			],
@@ -14,10 +26,6 @@
 			[
 				"Cats",
 				"CatsAndDogsModelSchema"
-			],
-			[
-				"ob",
-				"observable"
 			],
 			[
 				"TypeS",
@@ -67,7 +75,7 @@
 			"file": "PHPUnitDiff.css",
 			"settings":
 			{
-				"buffer_size": 98,
+				"buffer_size": 1413,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,23 +83,15 @@
 			"file": "PHPUnitDiff.html",
 			"settings":
 			{
-				"buffer_size": 710,
+				"buffer_size": 2199,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "PHPUnutDiffVM.js",
+			"file": "PHPUnitDiffVM.js",
 			"settings":
 			{
-				"buffer_size": 30,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorer.html",
-			"settings":
-			{
-				"buffer_size": 5991,
+				"buffer_size": 3604,
 				"line_ending": "Unix"
 			}
 		},
@@ -99,7 +99,15 @@
 			"file": "Test/PHPUnitDiff.Test.html",
 			"settings":
 			{
-				"buffer_size": 683,
+				"buffer_size": 674,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/cdamour/perf/local.db.json",
+			"settings":
+			{
+				"buffer_size": 14098,
 				"line_ending": "Unix"
 			}
 		},
@@ -107,7 +115,7 @@
 			"file": "Test/PHPUnitDiffVM.Test.js",
 			"settings":
 			{
-				"buffer_size": 131,
+				"buffer_size": 15522,
 				"line_ending": "Unix"
 			}
 		}
@@ -118,6 +126,10 @@
 		"height": 201.0,
 		"selected_items":
 		[
+			[
+				"guar",
+				"Guard: Start Guard"
+			],
 			[
 				"comm",
 				"Toggle Comment"
@@ -132,10 +144,6 @@
 			],
 			[
 				"gua",
-				"Guard: Stop Guard"
-			],
-			[
-				"guar",
 				"Guard: Stop Guard"
 			],
 			[
@@ -167,7 +175,7 @@
 				"Package Control: Remove Package"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -184,6 +192,9 @@
 	},
 	"file_history":
 	[
+		"/home/cdamour/code/PHPUnitDiff/PHPUnitDiffVM.js",
+		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorer.html",
+		"/home/cdamour/code/PHPUnitDiff/Guardfile",
 		"/home/cdamour/code/knockout.mapping/knockout.mapping.js",
 		"/home/cdamour/code/knockout.mapping/spec/proxyDependentObservableBehaviors.js",
 		"/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/untitled.sublime-project",
@@ -241,6 +252,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ComparisonControls",
+			"ComparisonBase",
+			"baseTest",
+			"TestResult",
+			"AddTestResult",
+			"TestNames",
+			"TestEvents",
+			"ParseJSONEvents",
+			"ResultData",
 			"===",
 			"= 0",
 			"RefreshResolutions",
@@ -353,15 +373,19 @@
 					"file": "PHPUnitDiff.css",
 					"settings":
 					{
-						"buffer_size": 98,
+						"buffer_size": 1413,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								96,
-								96
+								1300,
+								1300
+							],
+							[
+								1375,
+								1375
 							]
 						],
 						"settings":
@@ -369,7 +393,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1594.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -379,15 +403,15 @@
 					"file": "PHPUnitDiff.html",
 					"settings":
 					{
-						"buffer_size": 710,
+						"buffer_size": 2199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								691,
-								691
+								1322,
+								1322
 							]
 						],
 						"settings":
@@ -396,60 +420,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 357.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "PHPUnutDiffVM.js",
+					"file": "PHPUnitDiffVM.js",
 					"settings":
 					{
-						"buffer_size": 30,
+						"buffer_size": 3604,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								30,
-								30
+								3604,
+								3604
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/home/cdamour/Desktop/experiments/sandbox/Experiments/CascadingDataSet/CDSE/CascadingDataSetExplorer.html",
-					"settings":
-					{
-						"buffer_size": 5991,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								901,
-								901
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2601.0,
+						"translation.y": 2397.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -457,23 +455,23 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "Test/PHPUnitDiff.Test.html",
 					"settings":
 					{
-						"buffer_size": 683,
+						"buffer_size": 674,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								430,
-								430
+								551,
+								551
 							]
 						],
 						"settings":
@@ -488,11 +486,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "Test/PHPUnitDiffVM.Test.js",
+					"buffer": 4,
+					"file": "/home/cdamour/perf/local.db.json",
 					"settings":
 					{
-						"buffer_size": 131,
+						"buffer_size": 14098,
 						"regions":
 						{
 						},
@@ -505,9 +503,35 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Test/PHPUnitDiffVM.Test.js",
+					"settings":
+					{
+						"buffer_size": 15522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 752.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -544,7 +568,7 @@
 		"cols":
 		[
 			0.0,
-			0.523086503173,
+			0.492627846842,
 			1.0
 		],
 		"rows":
@@ -587,6 +611,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 236.0,
+	"side_bar_width": 128.0,
 	"status_bar_visible": true
 }
