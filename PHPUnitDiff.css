@@ -50,7 +50,7 @@
 
 	background-color: yellow;
 
-	margin: 3px 3px 15px 0px;
+	margin: 3px 28px 15px 0px;
 	padding: 2px;
 
 	font-size: 20px;
@@ -122,5 +122,30 @@
 
 .DeltaControls button
 {
+	font-size: 10pt;
+}
+
+
+.CloseResultButton
+{
+	margin-top: -10px;
+	margin-right: -10px;
+
+	float: right;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+
+	background-color: #DDDDDD;
+
+	text-align: center;
+
+	border: 2px solid black;
+
+	cursor: pointer;
+
 	font-size: 10pt;
 }

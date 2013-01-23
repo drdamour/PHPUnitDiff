@@ -11,6 +11,22 @@ function TestResultVM( ID, DeltaBase )
 	{
 		//TODO: make this it's own vm so the anonymous lambda is recreted for every event
 		self[Event.test] = Event;
+		
+		self[Event.test].TimeDelta = ko.computed(
+			function(TestName)
+			{	
+				return function()
+				{
+
+					var baseEvent = self.DeltaBase()[TestName];
+					var thisEvent = self[TestName];
+					
+					return baseEvent.time - thisEvent.time;
+							
+				}
+			}(Event.test)
+		);
+
 		self[Event.test].Delta = ko.computed(
 			function(TestName)
 			{	
@@ -35,7 +51,16 @@ function TestResultVM( ID, DeltaBase )
 					}
 					else
 					{
-						return Math.abs((baseEvent.time - thisEvent.time) / baseEvent.time * 100).toFixed(2) + '%'
+						var delta = thisEvent.TimeDelta()
+						if(delta > 0) //Faster
+						{
+							return Math.abs(delta / thisEvent.time * 100).toFixed(2) + '%'
+						}
+						else //Slower
+						{
+							return Math.abs(delta / baseEvent.time * 100).toFixed(2) + '%'
+						}
+						
 					}
 							
 				}
@@ -43,20 +68,7 @@ function TestResultVM( ID, DeltaBase )
 		);
 
 
-		self[Event.test].TimeDelta = ko.computed(
-			function(TestName)
-			{	
-				return function()
-				{
 
-					var baseEvent = self.DeltaBase()[TestName];
-					var thisEvent = self[TestName];
-					
-					return baseEvent.time - thisEvent.time;
-							
-				}
-			}(Event.test)
-		);
 
 
 	}

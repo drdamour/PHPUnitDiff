@@ -41,6 +41,7 @@
 
 		<div data-bind="sortable: TestResults" >
 			<div class="TestResults">
+				<div class="CloseResultButton" data-bind="click: $root.TestResults.remove.bind($root.TestResults)">X</div>
 				<div class="ResultNames" data-bind="text: ID"></div>
 				<div class="DeltaControls">
 					<div>
